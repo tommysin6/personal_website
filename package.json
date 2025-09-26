@@ -1,0 +1,23 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "A responsive personal website portfolio.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "keywords": [
+    "portfolio",
+    "personal",
+    "website",
+    "responsive"
+  ],
+  "author": "Okusanya Amos Oluwatomisin",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

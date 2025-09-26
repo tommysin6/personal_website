@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Okusanya Amos Oluwatomisin</title>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">Amos Oluwatomisin Okusanya</a>
+                <nav class="nav-bar" id="nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">Resume</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <button id="menu-toggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-text">
+                        <h1>Hi, I'm Tomisin</h1>
+                        <p>A front-end developer focused on clean UI, performance and accessible experiences.</p>
+                        <div class="hero-ctas">
+                            <a href="#projects" class="btn primary">See projects</a>
+                            <a href="#contact" class="btn">Contact me</a>
+                        </div>
+                    </div>
+                    <div class="hero-card">
+                        <img
+                          src="./images/profile_pic-2.jpg"
+                          alt="Portrait of Amos Oluwatomisin"
+                          loading="lazy"
+                          width="360" height="360"
+                          style="width:100%;height:auto;border-radius:12px;display:block;"
+                          onerror="this.onerror=null;this.src='https://via.placeholder.com/720x720.png?text=Profile';">
+                        <ul class="skills">
+                            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="container about">
+                <h2>About / Resume</h2>
+                <p>Software engineer with experience building responsive apps and polished UI. Available for remote and on-site roles.</p>
+            </section>
+
+            <section id="projects" class="container projects">
+                <div class="projects-header">
+                    <h2>Projects</h2>
+                    <div class="filters">
+                        <button class="filter active" data-filter="all">All</button>
+                        <button class="filter" data-filter="web">Web</button>
+                        <button class="filter" data-filter="ui">UI</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <article class="project-card" data-type="web">
+                        <img src="https://via.placeholder.com/600x360.png?text=Project+1" alt="">
+                        <div class="card-body">
+                            <h3>Project 1</h3>
+                            <p>Responsive web app with API integration.</p>
+                            <a class="btn" href="#" target="_blank" rel="noopener">View</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-type="ui">
+                        <img src="https://via.placeholder.com/600x360.png?text=Project+2" alt="">
+                        <div class="card-body">
+                            <h3>Project 2</h3>
+                            <p>Design system and component library.</p>
+                            <a class="btn" href="#" target="_blank" rel="noopener">View</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-type="web">
+                        <img src="https://via.placeholder.com/600x360.png?text=Project+3" alt="">
+                        <div class="card-body">
+                            <h3>Project 3</h3>
+                            <p>Performance-focused frontend rewrite.</p>
+                            <a class="btn" href="#" target="_blank" rel="noopener">View</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="container contact">
+                <h2>Contact</h2>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Send</button>
+                        <div id="form-status" class="status" aria-live="polite"></div>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <small>© 2025 Amos Oluwatomisin — Built with care.</small>
+            </div>
+        </footer>
+
+        <!-- fix: correct relative path to the site script (was breaking all JS features) -->
+        <script src="js/main.js" defer></script>
+    </body>
+</html>
